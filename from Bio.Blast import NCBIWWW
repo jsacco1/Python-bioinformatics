@@ -1,0 +1,28 @@
+from Bio.Blast import NCBIWWW
+
+In [2]: from Bio.Blast import NCBIXML
+
+In [5]: fasta_string = open( "/Users/MacUser/Documents/bacteria.fasta.txt" ).read( )
+
+In [7]: result_handle = NCBIWWW.qblast("blastn", "nt", fasta_string);
+
+In [9]: from Bio.Blast import NCBIXML
+
+In [11]: blast_record = NCBIXML.read(result_handle)
+
+In [12]: len(blast_record.alignments)
+Out[12]: 0
+
+In [13]: E_VALUE_THRESH = 0.01
+
+In [14]: for alignment in blast_record.alignments:
+    ...:     for hsp in alignment.hsps:
+    ...:         if hsp.expect < E_VALUE_THRESH:
+    ...:             print('****Alignment****')
+    ...:             print('sequence:', alignment.title)
+    ...:             print('length:', alignment.length)
+    ...:             print('e value:', hsp.expect)
+    ...:             print(hsp.query)
+    ...:             print(hsp.match)
+    ...:             print(hsp.sbjct);
+    ...:             
