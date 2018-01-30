@@ -5,7 +5,7 @@ Created on Thu Oct 13 17:43:06 2016
 
 @author: James
 """
-"""This is my first Python program. It computes the GC content of a DNA sequence"""
+"""This program computes the GC content of a DNA sequence"""
 #get DNA sequence:
 dna_sequence='atgagatgatgacctcgccgtagcctcggtac'
 no_c=dna_sequence.count('c')
