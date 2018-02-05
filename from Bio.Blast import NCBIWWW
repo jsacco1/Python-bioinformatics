@@ -1,4 +1,6 @@
-from Bio.Blast import NCBIWWW
+#Script to call BLAST remotely
+
+In [1]: from Bio.Blast import NCBIWWW
 
 In [2]: from Bio.Blast import NCBIXML
 
