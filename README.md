@@ -1,3 +1,3 @@
 # bioinformatics
 
-bioinformatics scripts
+bioinformatics scripts in Python
