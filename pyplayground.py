@@ -5,6 +5,7 @@ Created on Wed Oct 19 15:25:03 2016
 
 @author: James
 """
+#use iTunes playlist to learn scientific Python packages
 
 import matplotlib
 import re, argparse
