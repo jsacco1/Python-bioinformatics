@@ -1,6 +1,8 @@
-
+#!/usr/bin/env python3
 """
-Description: Call BLAST remotely
+Call BLAST remotely with Bio.Blast
+
+By: James Sacco
 """
 
 from Bio.Blast import NCBIWWW, NCBIXML
