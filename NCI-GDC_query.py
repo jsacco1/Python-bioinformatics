@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ ---
-CLI for a simple json formatted query of NCI GDC API.
+CLI for a simple json query of meta-data via NCI GDC API.
 
 author: James Sacco
 date: 2020-12-09
@@ -23,7 +23,7 @@ def main(primary_site,
     """
     Args:
         primary_site: location of tissue. example: Lung
-        exp_strategy: experimental strategy. example: RNA-Seq 
+        exp_strategy: experimental strategy. example: RNA-Seq, WXS, Genotyping Array, miRNA-Seq
         data_format: format of file. example: BAM
     """
 
@@ -95,4 +95,4 @@ if __name__ == "__main__":
         data_format = sys.argv[3]
         main(primary_site = primary_site, exp_strategy = exp_strategy, data_format = data_format)
     else:
-        print("Input required args: (1) primary site, (2) experiment strategy, (3) data format")
+        print("Input required arguments: \n (1) primary site, (2) experiment strategy, (3) data format.\nIf your argument contains whitespace, enclose it in quotes")
