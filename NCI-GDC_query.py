@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ ---
-CLI for a simple json formatted query of NCI GDC API.
+CLI for a simple json query of meta-data via NCI GDC API.
 
 author: James Sacco
 date: 2020-12-09
