@@ -22,9 +22,9 @@ def main(primary_site,
     data_format):
     """
     Args:
-        primary_site: location of tissue. example: Lung
-        exp_strategy: experimental strategy. example: RNA-Seq, WXS, Genotyping Array, miRNA-Seq
-        data_format: format of file. example: BAM
+        primary_site: location of tissue. examples: Lung, Skin, Brain, Breast
+        exp_strategy: experimental strategy. examples: RNA-Seq, WXS, Genotyping Array, miRNA-Seq
+        data_format: format of file. examples: BAM, Gene Expression Quantification
     """
 
 
